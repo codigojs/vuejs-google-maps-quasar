@@ -1,5 +1,5 @@
-# Multidomain
-Proyecto de ejemplo para insertar un mapa de google en una página web usando Quasar y VueJS
+# Vuej Google maps con Quasar Framework
+Proyecto de ejemplo para insertar un mapa de google en una página web usando Quasar, VueJS e insertar polígono con fronteras de paises y provincias del mundo.
 
 ## Clonar el proyecto
 
