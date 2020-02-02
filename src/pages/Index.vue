@@ -12,6 +12,7 @@
           :icon="icon"
         >
         </gmap-marker>
+        <gmap-polygon :paths="paths" :editable="false" :draggable="false"></gmap-polygon>
       </gmap-map>
   </div>
   </q-page>
@@ -21,11 +22,11 @@
 import Vue from 'vue'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
-// import { paths } from '../statics/paths'
+import { paths } from '../statics/paths'
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: 'api-key-google'
+    key: 'tu-api-key'
   }
 })
 
@@ -49,7 +50,8 @@ export default {
         streetViewControl: false, // Oculta el control de StreeView del mapa
         fullscreenControl: true // Establce el control full screen para ver el mapa a pantalla completa
       },
-      icon: '/statics/marker.png'
+      icon: '/statics/marker.png',
+      paths: paths
     }
   }
 }
