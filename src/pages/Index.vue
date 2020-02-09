@@ -23,6 +23,7 @@ import Vue from 'vue'
 import * as VueGoogleMaps from 'vue2-google-maps'
 
 import { paths } from '../statics/paths'
+import { styleMap } from '../statics/style'
 
 Vue.use(VueGoogleMaps, {
   load: {
@@ -48,7 +49,9 @@ export default {
         mapTypeControl: false, // Oculta el control de tipos de mapas
         scaleControl: false, //  Oculta el control de escala del mapa
         streetViewControl: false, // Oculta el control de StreeView del mapa
-        fullscreenControl: true // Establce el control full screen para ver el mapa a pantalla completa
+        fullscreenControl: true, // Establce el control full screen para ver el mapa a pantalla completa
+        styles: styleMap // Estilos del Mapa
+
       },
       icon: '/statics/marker.png',
       paths: paths
